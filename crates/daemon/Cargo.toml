@@ -8,6 +8,10 @@ license.workspace = true
 name = "mcp-cli-daemon"
 path = "src/main.rs"
 
+[[bench]]
+name = "fs_read_vs_cat"
+harness = false
+
 [dependencies]
 protocol.workspace = true
 serde.workspace = true
