@@ -282,9 +282,8 @@ fn wait_for_socket(socket: &Path, timeout: Duration) {
 }
 
 fn human_size(size: usize) -> String {
-    match size / 1024 {
-        kib => format!("{kib} KiB"),
-    }
+    let kib = size / 1024;
+    format!("{kib} KiB")
 }
 
 fn fmt_ns(ns: u128) -> String {
